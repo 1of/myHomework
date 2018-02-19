@@ -261,7 +261,6 @@ color: #0085c3;
 
 
 @media screen and (max-width: 990px) {
-
 ul.navbar-nav li a{
 	text-decoration: none;
 }
@@ -292,4 +291,5 @@ main {
 .main-article article{
 	flex-wrap: wrap;
 	flex-direction: row;
+}
 }
