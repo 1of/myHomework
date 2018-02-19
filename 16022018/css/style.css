@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
 	padding: 14px 0;
-	background: #fff;
+	background-color: rgba(255,255,255,1);
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -77,9 +77,9 @@ nav ul li {
 }
 
 nav ul li a {
-	text-decoration: none;
+	text-decoration: none !important;
 	color: #1a1a1a;
-	font-family: OswaldRegular;
+	font-family: OswaldRegular !important;
 	text-transform: uppercase;
 	padding: 10px 14px;
 }
@@ -105,7 +105,7 @@ nav ul li a:hover {
 }
 
 main {
-	margin-top: 90px;
+	margin-top: 70px;
 }
 
 .main-slider {
@@ -149,11 +149,13 @@ main {
 .column-right > .link-btn1 a{
 	color: #fff ;
 	background: #4ca54c;
+	text-decoration: none;
 
 }
 .column-right > .link-btn2 a{
 	background: #f1f1f1;
 	color: #1a1a1a;
+	text-decoration: none;
 }
 
 .column-right > .link-btn1 a:hover{
@@ -255,4 +257,39 @@ footer .footer-social a {
 }
 footer .footer-social a i:hover{
 color: #0085c3;
+}
+
+
+@media screen and (max-width: 990px) {
+
+ul.navbar-nav li a{
+	text-decoration: none;
+}
+ul.navbar-nav li {
+	padding: 8px;
+}
+header {
+	padding: 0;
+	background-color: rgba(255,255,255,0.3);
+}
+main {
+	margin-top: 40px;
+}
+.navbar {
+	background-color: rgba(255,255,255,0.9);
+}
+.column-right img {
+	width: 100%;
+}
+.column-right span {
+	display: block;
+}
+.column-right a{
+	width: 100%;
+	padding: 8px 16px;
+	margin-bottom: 3px;
+}
+.main-article article{
+	flex-wrap: wrap;
+	flex-direction: row;
 }
