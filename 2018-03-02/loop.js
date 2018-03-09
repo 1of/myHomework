@@ -175,4 +175,3 @@ dot += "\n";
 	var str = dot.split("").reverse().join("");
 	console.log(str);
 }
-
