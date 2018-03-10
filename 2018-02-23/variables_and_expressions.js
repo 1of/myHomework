@@ -16,12 +16,12 @@ var mul, div, sub, sum;
 mul = x * y;
 div = x / y;
 sub = x - y;
-sum - x + y;
+sum = parseInt(x) + parseInt(y);
 alert(`3 task:
 multiplikation x*y = ${mul}
 division x/y = ${div}
-subtraction x*y = ${sub}
-addition x*y = ${sum}`)
+subtraction x-y = ${sub}
+addition x+y = ${sum}`)
 /* 4.Напишите программу, которая без использования оператора сравнения определяет, является ли число, введенное пользователем, нечётным. Результат отобразите в alert.*/ 
 var _isNum;
 _isNum = prompt('Введите число для определиния Нечетности', '');
