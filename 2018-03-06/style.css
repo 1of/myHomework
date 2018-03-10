@@ -2,6 +2,7 @@ body {
 	background: radial-gradient(ellipse at top, #e66465, transparent),
             radial-gradient(ellipse at bottom, #4d9f0c, transparent);
       }
+      
 
 input {
 	color: green;
@@ -22,8 +23,6 @@ text-shadow: 0 0 7px #fff;
 	transition: border 0.5s;
 }
 img {
-	display: none;
-	text-align: center;
-	border-radius: 10%;
+	
 
 }
