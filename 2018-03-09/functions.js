@@ -74,33 +74,63 @@ console.log("Новый массив arr только с fullName: ", arr);
 
 
 // 5.	Напишите функцию аналог метода массива shift. Функция удаляет из переданного в параметре массива первый элемент и возвращает новый массив.
-
+function shifting(arr) {
+arr.shift();
+return arr
+}
+shifting(["gg", "jhh", 77]);
+console.log( shifting([123, "gg", "jhh", 77]) );
 // 6.	Напишите функцию аналог метода массива push. Функция добавляет в конец переданного в параметре массив произвольное количество элементов.
+function pushing(arr) {
+var rand = Math.ceil(Math.random()*50);
+for (var i = 0; i < rand; i++) {
+	arr.push(-1);	//пушим произвольное значение -1
+	}
+return arr
+}
+console.log( pushing([123, "gg", "jhh", 77]) );
 
 // 7.	Напишите функцию аналог метода jQuery $.extend. Первый параметр функции - целевой объект, поля которого будут изменены или расширены. Остальные параметры - объекты-источники, полями которых будет расширяться целевой объект.
-
-// var source = {firstname: 'Tom', age: 10}
-// var s = extend(source, {firstname: 'John'}, {lastname: 'Doe'});
-// console.log(source); // {firstname: 'John', age: 10, lastname: 'Doe'}
-// console.log(s); // {firstname: 'John', age: 10, lastname: 'Doe'}
+function extend(source) {
+for (var i = 1; i < arguments.length; i++) {	
+	for (var key in source) {
+		for (var keyArg in arguments[i]){
+		if (key == keyArg) {source[key] = arguments[i][key];}	
+		if (key !== keyArg) {source[keyArg] = arguments[i][keyArg];}
+		}
+}		
+}
+return source
+}
+var source = {firstname: 'Tom', age: 10};
+console.log(source);
+var s = extend(source, {firstname: 'John'}, {lastname: 'Doe'});
+console.log(source); // {firstname: 'John', age: 10, lastname: 'Doe'}
+console.log(s); // {firstname: 'John', age: 10, lastname: 'Doe'}
 
 // 8.	Напишите функцию setComment с параметрами: date, message, author. Дата и текст сообщения - обязательные параметры, если какой-то из них или оба отсутствуют, то выполнение функции должно обрываться, а пользователю выдаваться предупреждение (alert) о том, что данные переданы некорректно. Параметр author - опциональный, но должна происходить проверка: если параметр не передан, то вместо него подставляется значение ‘Anonymous’. Функция распечатывает на странице текст в формате: 
 // 				<имя_автора>, <дата>
 // 				<текст_сообщения>
+function setComment(date, message, author = 'Anonymous') {
+	if (date === undefined || message === undefined) { 
+		alert("Данные переданы некорректно!");
+		return
+	}
+alert(author + ", " + date +  "\n" +  message);
+}
 
-// setComment('2016-11-02', 'Everything is ok', 'John');
-
+setComment('2016-11-02', 'Everything is ok', 'John');
 // John, 2016-12-22
 // Everything is ok
-
-// setComment('2016-11-02', 'You could do it better!');
-
+setComment('2016-11-02', 'You could do it better!');
 // Anonymous, 2016-12-22
 // You could do it better!
 
 // Замыкания
 // 1.	Используя замыкание, напишите функцию createTimer, которая использует метод performance.now() для получения текущей временной метки и служит для замера времени выполнения другого кода:
-
+function createTimer() {
+	
+}
 // var timer = createTimer();
 // alert('!')  // код, время выполнения которого нужно измерить
 // alert( timer() ); // время в мкс от начала выполнения createTimer() до момента вызова timer()
