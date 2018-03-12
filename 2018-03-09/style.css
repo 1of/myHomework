@@ -1,12 +1,16 @@
-body {
-	background: radial-gradient(ellipse at top, #e66465, transparent),
-            radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+html {
+	background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);       
       }
-      
+form {
+	max-width: 800px;
+	margin: auto;
+	display: grid;
+	 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ }     
 
 input {
-	color: green;
-	width: 150px;
+	color: white;
+	width: 180px;
 	height: 100px;
 	background: linear-gradient(180deg, blue, transparent 50%);
 	border: 2px solid blue;
@@ -14,6 +18,12 @@ input {
 		border-radius: 10%;
 		font-size: 150%
 
+}
+h2 {
+	text-align: center;
+	color: white;
+	font-size: 200%;
+	text-decoration: underline overline wavy yellow;
 }
 input:hover {
 text-shadow: 0 0 7px #fff;
