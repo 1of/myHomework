@@ -1,0 +1,38 @@
+html {
+	background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);       
+      }
+form {
+	max-width: 800px;
+	margin: auto;
+	display: grid;
+	 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ }     
+
+input {
+	color: white;
+	width: 180px;
+	height: 100px;
+	background: linear-gradient(180deg, blue, transparent 50%);
+	border: 2px solid blue;
+	box-shadow: 2px 5px 5px gray;
+		border-radius: 10%;
+		font-size: 150%
+
+}
+h2 {
+	text-align: center;
+	color: white;
+	font-size: 200%;
+	text-decoration: underline overline wavy yellow;
+}
+input:hover {
+text-shadow: 0 0 7px #fff;
+	border: 2px solid red;
+	background: linear-gradient(180deg, transparent 50%, blue);
+	transition: text-shadow 1s;
+	transition: border 0.5s;
+}
+img {
+	
+
+}
