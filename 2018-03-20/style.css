@@ -1,0 +1,15 @@
+html {     
+      }
+h2 {
+	text-align: center;
+	color: white;
+	font-size: 200%;
+	text-decoration: underline overline wavy yellow;
+}
+input:hover {
+text-shadow: 0 0 7px #fff;
+	border: 2px solid red;
+	background: linear-gradient(180deg, transparent 50%, blue);
+	transition: text-shadow 1s;
+	transition: border 0.5s;
+}
