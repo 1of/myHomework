@@ -191,3 +191,7 @@ alert( plus(1) ); // 6
 alert( plus(5) ); // 10
 //******************
 }
+setInterval(function(){
+	$(".animate_header").slideUp(800);
+$(".animate_header").slideDown(600);
+}, 3000);

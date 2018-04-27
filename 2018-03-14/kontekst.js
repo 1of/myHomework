@@ -233,7 +233,7 @@ var obj = {
 	appendText: function(text) {
 		$('p').text(text);
 	},
-	string: [" H", "e", "l", "l", "0!"]
+	string: [" H", "e", "l", "l", "0!", "l", "0!", "l", "0!"]
 }	
 function str() {
 for (let i = 0;  i < obj.string.length; i++) {
